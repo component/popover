@@ -1,0 +1,13 @@
+{
+  "name": "popover",
+  "description": "Popover component",
+  "version": "0.0.1",
+  "keywords": ["toolpopover", "popover", "ui"],
+  "dependencies": {
+    "component/popover": "*",
+    "component/jquery": "*"
+  },
+  "scripts": ["index.js"],
+  "styles": ["popover.css"],
+  "templates": ["popover.html"]
+}
