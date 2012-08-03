@@ -18,11 +18,6 @@ $ npm install popover-component
   - fluent API
   - minimal base styling
 
-## Events
-
-  - `show` the tip is shown
-  - `hide` the tip is hidden
-
 ## API
 
 ### new Popover(content, [title])
