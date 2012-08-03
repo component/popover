@@ -33,7 +33,7 @@ $ npm install popover-component
 
 ```js
 var Popover = require('popover');
-var popover = new Tip('You have mail!!!', 'Mail');
+var popover = new Popover('You have mail!!!', 'Mail');
 popover.show('#avatar');
 ```
 
