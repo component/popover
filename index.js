@@ -4,7 +4,7 @@
  */
 
 var Tip = require('tip')
-  , $ = require('jquery');
+  , o = require('jquery');
 
 /**
  * Expose `Popover`.
