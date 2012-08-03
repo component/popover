@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "keywords": ["toolpopover", "popover", "ui"],
   "dependencies": {
-    "component/popover": "*",
+    "component/tip": "*",
     "component/jquery": "*"
   },
   "scripts": ["index.js"],
