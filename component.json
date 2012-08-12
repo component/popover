@@ -7,7 +7,6 @@
     "component/tip": "*",
     "component/jquery": "*"
   },
-  "scripts": ["index.js"],
-  "styles": ["popover.css"],
-  "templates": ["popover.html"]
+  "scripts": ["index.js", "template.js"],
+  "styles": ["popover.css"]
 }

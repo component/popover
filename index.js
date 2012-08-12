@@ -22,7 +22,7 @@ module.exports = Popover;
  */
 
 function Popover(content, title) {
-  this.popover = o(render('popover'));
+  this.popover = o(require('./template'));
   Tip.call(this, this.popover);
   this.classname = 'popover';
   this.el.addClass('popover');
