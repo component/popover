@@ -35,6 +35,10 @@ popover.show('#avatar');
  View [Tip](http://github.com/component/tip) for additional
  API documentation.
 
+## Themes
+
+  - [Aurora](https://github.com/component/aurora-popover)
+
 ## License
 
   MIT
