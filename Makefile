@@ -1,5 +1,5 @@
 
-build: popover.css index.js template.js components
+build: index.js template.js components
 	@component build --dev
 
 template.js: template.html
