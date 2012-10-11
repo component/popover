@@ -10,6 +10,5 @@
   "development": {
     "component/aurora-popover": "*"
   },
-  "scripts": ["index.js", "template.js"],
-  "styles": ["popover.css"]
+  "scripts": ["index.js", "template.js"]
 }
