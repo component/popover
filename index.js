@@ -75,5 +75,3 @@ Popover.prototype.hideTitle = function(){
   this.popover.find('.popover-title').remove();
   return this;
 };
-
-
