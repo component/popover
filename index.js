@@ -1,10 +1,10 @@
-
 /**
  * Module dependencies.
  */
 
 var Tip = require('tip')
-  , o = require('jquery');
+  , o = require('jquery')
+  , inherit = require('inherit');
 
 /**
  * Expose `Popover`.
@@ -36,7 +36,7 @@ function Popover(content, title) {
  * Inherits from `Tip.prototype`.
  */
 
-Popover.prototype.__proto__ = Tip.prototype;
+inherit(Popover, Tip);
 
 /**
  * Replace `content`.

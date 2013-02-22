@@ -5,7 +5,8 @@
   "keywords": ["toolpopover", "popover", "ui"],
   "dependencies": {
     "component/tip": "*",
-    "component/jquery": "*"
+    "component/jquery": "*",
+    "component/inherit": "*"
   },
   "development": {
     "component/aurora-popover": "*"
