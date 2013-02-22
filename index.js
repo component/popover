@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -36,7 +35,12 @@ function Popover(content, title) {
  * Inherits from `Tip.prototype`.
  */
 
-Popover.prototype.__proto__ = Tip.prototype;
+if ({}.__proto__) {
+  Popover.prototype.__proto__ = Tip.prototype;
+} else {
+  Popover.prototype = new Tip();
+  Popover.prototype.constructor = Popover;
+}
 
 /**
  * Replace `content`.
