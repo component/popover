@@ -3,7 +3,8 @@
  */
 
 var Tip = require('tip')
-  , o = require('jquery');
+  , o = require('jquery')
+  , inherit = require('inherit');
 
 /**
  * Expose `Popover`.
@@ -35,12 +36,7 @@ function Popover(content, title) {
  * Inherits from `Tip.prototype`.
  */
 
-if ({}.__proto__) {
-  Popover.prototype.__proto__ = Tip.prototype;
-} else {
-  Popover.prototype = new Tip();
-  Popover.prototype.constructor = Popover;
-}
+inherit(Popover, Tip);
 
 /**
  * Replace `content`.
