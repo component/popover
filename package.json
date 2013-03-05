@@ -1,0 +1,17 @@
+{
+  "name": "popover-component",
+  "description": "Popover component",
+  "version": "1.0.0",
+  "keywords": ["popover", "component"],
+  "dependencies": {
+    "tip-component": "*",
+    "jquery-component": "*",
+    "inherit-component": "*"
+  },
+  "component": {
+    "scripts": {
+      "popover/index.js": "index.js",
+      "popover/template.js": "template.js"
+    }
+  }
+}
