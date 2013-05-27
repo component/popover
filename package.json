@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "keywords": ["popover", "component"],
   "dependencies": {
-    "tip-component": "*",
+    "tip-component": "0.2.1",
     "jquery-component": "*",
-    "inherit-component": "*"
+    "inherit-component": "0.0.2"
   },
   "component": {
     "scripts": {
