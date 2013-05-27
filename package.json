@@ -1,7 +1,7 @@
 {
   "name": "popover-component",
   "description": "Popover component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": ["popover", "component"],
   "dependencies": {
     "tip-component": "0.2.1",

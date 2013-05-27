@@ -1,7 +1,7 @@
 {
   "name": "popover",
   "description": "Popover component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": ["toolpopover", "popover", "ui"],
   "dependencies": {
     "component/tip": "0.2.1",
