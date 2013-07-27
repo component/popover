@@ -4,11 +4,11 @@
   "version": "1.0.1",
   "keywords": ["popover", "component"],
   "bugs": {
-    "url": "https://github.com/mikeumus/docpad-plugin-iconmonstr.git/issues"
+    "url": "https://github.com/component/popover.git/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikeumus/docpad-plugin-iconmonstr.git"
+    "url": "https://github.com/component/popover.git"
   },
   "dependencies": {
     "tip-component": "0.2.1",
