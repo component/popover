@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "keywords": ["toolpopover", "popover", "ui"],
   "dependencies": {
-    "component/tip": "0.2.1",
+    "component/tip": "ie8_compat",
     "component/jquery": "*",
     "component/inherit": "0.0.2"
   },

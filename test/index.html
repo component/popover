@@ -21,15 +21,18 @@
         width: 100px;
         text-align: center;
       }
+      .tip-inner {
+        background-color: black;
+      }
     </style>
   </head>
   <body>
     <title>Popover</title>
     <script src="../build/build.js"></script>
-    <a href="#" id="north">North</a>
-    <a href="#" id="east">East</a>
-    <a href="#" id="west">West</a>
-    <a href="#" id="south">South</a>
+    <a href="#" id="top">Top</a>
+    <a href="#" id="right">Right</a>
+    <a href="#" id="left">Left</a>
+    <a href="#" id="bottom">Bottom</a>
     <a href="#" id="markup">Markup</a>
     <a href="#" id="auto">Auto</a>
     <script>
@@ -37,9 +40,9 @@
       var Popover = require('popover');
       Popover.effect = 'fade';
 
-      o('#north,#east,#west,#south').each(function(i, el){
-        var tip = new Popover('Some popover content', el.textContent);
-        tip.position(el.textContent.toLowerCase());
+      o('#top,#right,#left,#bottom').each(function(i, el){
+        var tip = new Popover('Some popover content', o(el).text());
+        tip.position(o(el).text().toLowerCase());
         o(el).hover(function(){
           tip.show(el);
         }, function(){
@@ -48,9 +51,9 @@
       })
 
       var tip = new Popover('<input type="search" placeholder="Search" />', 'Search');
-      tip.position('north');
+      tip.position('top');
       o('#markup').hover(function(){
-        tip.show(o('#markup'));
+        tip.show('#markup');
       }, function(){
         tip.hide(200);
       })
