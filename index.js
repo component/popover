@@ -22,10 +22,9 @@ module.exports = Popover;
  */
 
 function Popover(content, title) {
-  this.popover = o(require('./template'));
-  Tip.call(this, this.popover);
+  Tip.call(this, require('./template'));
   this.classname = 'popover';
-  this.el.addClass('popover');
+  this.classes.add('popover');
   if (title) this.title(title)
   else this.hideTitle();
   this.content(content);
@@ -47,7 +46,7 @@ inherit(Popover, Tip);
  */
 
 Popover.prototype.content = function(content){
-  this.popover.find('.popover-content').empty().append(content);
+  o(this.el).find('.popover-content').html(content);
   return this;
 };
 
@@ -60,7 +59,7 @@ Popover.prototype.content = function(content){
  */
 
 Popover.prototype.title = function(title){
-  this.popover.find('.popover-title').empty().append(title);
+  o(this.el).find('.popover-title').html(title);
   return this;
 };
 
@@ -72,6 +71,6 @@ Popover.prototype.title = function(title){
  */
 
 Popover.prototype.hideTitle = function(){
-  this.popover.find('.popover-title').remove();
+  o(this.el).find('.popover-title').remove();
   return this;
 };
