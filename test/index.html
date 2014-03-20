@@ -36,27 +36,30 @@
     <a href="#" id="markup">Markup</a>
     <a href="#" id="auto">Auto</a>
     <script>
-      var o = require('component-jquery');
+      var q = require('component-query');
       var Popover = require('popover');
       Popover.effect = 'fade';
 
-      o('#top,#right,#left,#bottom').each(function(i, el){
-        var tip = new Popover('Some popover content', o(el).text());
-        tip.position(o(el).text().toLowerCase());
-        o(el).hover(function(){
+      [].slice.call(q.all('#top,#right,#left,#bottom')).forEach(function(el){
+        var tip = new Popover('Some popover content', el.textContent);
+        tip.position(el.textContent.toLowerCase());
+        el.addEventListener('mouseenter', function(){
           tip.show(el);
-        }, function(){
+        });
+        el.addEventListener('mouseleave', function(){
           tip.hide(200);
-        })
+        });
       })
 
       var tip = new Popover('<input type="search" placeholder="Search" />', 'Search');
       tip.position('top');
-      o('#markup').hover(function(){
-        tip.show('#markup');
-      }, function(){
+      var markup = q('#markup');
+      markup.addEventListener('mouseenter', function(){
+        tip.show(markup);
+      });
+      markup.addEventListener('mouseleave', function(){
         tip.hide(200);
-      })
+      });
 
       var auto = new Popover('You have messages!', 'Title');
       auto.show('#auto');
