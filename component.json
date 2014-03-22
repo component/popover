@@ -5,7 +5,7 @@
   "keywords": ["toolpopover", "popover", "ui"],
   "dependencies": {
     "component/tip": "*",
-    "component/jquery": "*",
+    "component/query": "*",
     "component/inherit": "0.0.2"
   },
   "development": {

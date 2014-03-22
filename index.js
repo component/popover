@@ -3,7 +3,7 @@
  */
 
 var Tip = require('tip')
-  , o = require('jquery')
+  , q = require('query')
   , inherit = require('inherit');
 
 /**
@@ -25,7 +25,7 @@ function Popover(content, title) {
   Tip.call(this, require('./template'));
   this.classname = 'popover';
   this.classes.add('popover');
-  if (title) this.title(title)
+  if (title) this.title(title);
   else this.hideTitle();
   this.content(content);
   if (Popover.effect) this.effect(Popover.effect);
@@ -46,7 +46,11 @@ inherit(Popover, Tip);
  */
 
 Popover.prototype.content = function(content){
-  o(this.el).find('.popover-content').html(content);
+  var contentEl = q('.popover-content', this.el);
+  if (typeof content === 'string')
+    contentEl.innerHTML = content;
+  else
+    contentEl.appendChild(content);
   return this;
 };
 
@@ -59,7 +63,11 @@ Popover.prototype.content = function(content){
  */
 
 Popover.prototype.title = function(title){
-  o(this.el).find('.popover-title').html(title);
+  var titleEl = q('.popover-title', this.el);
+  if (typeof title === 'string')
+    titleEl.innerHTML = title;
+  else
+    titleEl.appendChild(title);
   return this;
 };
 
@@ -71,6 +79,7 @@ Popover.prototype.title = function(title){
  */
 
 Popover.prototype.hideTitle = function(){
-  o(this.el).find('.popover-title').remove();
+  var titleEl = q('.popover-title', this.el);
+  titleEl.parentNode.removeChild(titleEl);
   return this;
 };
