@@ -1,4 +1,10 @@
 
+1.1.0 / 2014-03-22
+==================
+
+ * remove jquery dependency, allow html nodes as content
+ * bringing up-to-speed with latest tip updates
+
 1.0.1 / 2013-05-27 
 ==================
 
