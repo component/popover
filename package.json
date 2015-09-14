@@ -11,9 +11,14 @@
     "url": "https://github.com/component/popover.git"
   },
   "dependencies": {
-    "tip-component": "*",
+    "component-tip": "*",
     "component-query": "*",
     "component-inherit": "0.0.3"
+  },
+  "browser": {
+    "inherit": "component-inherit",
+    "query": "component-query",
+    "tip": "component-tip"
   },
   "component": {
     "scripts": {
