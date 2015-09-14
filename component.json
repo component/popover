@@ -1,8 +1,12 @@
 {
   "name": "popover",
   "description": "Popover component",
-  "version": "1.1.0",
-  "keywords": ["toolpopover", "popover", "ui"],
+  "version": "1.1.1",
+  "keywords": [
+    "toolpopover",
+    "popover",
+    "ui"
+  ],
   "dependencies": {
     "component/tip": "*",
     "component/query": "*",
@@ -11,5 +15,8 @@
   "development": {
     "component/aurora-popover": "*"
   },
-  "scripts": ["index.js", "template.js"]
+  "scripts": [
+    "index.js",
+    "template.js"
+  ]
 }
